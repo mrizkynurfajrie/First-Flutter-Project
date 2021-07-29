@@ -5,12 +5,14 @@ class RoundedButton extends StatelessWidget {
   final String text;
   final Function press;
   final Color color, textColor;
+  final double fontsize;
   const RoundedButton({
     Key key,
     this.text,
     this.press,
     this.color = kPrimaryColor,
     this.textColor = Colors.white,
+    this.fontsize,
   }) : super(key: key);
 
   @override
@@ -29,7 +31,8 @@ class RoundedButton extends StatelessWidget {
                 shape: const BeveledRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(8)))),
             onPressed: press,
-            child: Text(text, style: TextStyle(color: textColor)),
+            child: Text(text,
+                style: TextStyle(color: textColor, fontSize: fontsize)),
           ),
         ),
       ),

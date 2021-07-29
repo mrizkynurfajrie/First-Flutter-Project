@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sigas_fuel/components/rounded_button.dart';
 import 'package:sigas_fuel/components/side_menu/components/mycompany.dart';
 import 'package:sigas_fuel/constants.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:sigas_fuel/components/side_menu/components/area_info_text.dart';
 
 class SideMenu extends StatelessWidget {
@@ -41,57 +41,17 @@ class SideMenu extends StatelessWidget {
                           text:
                               "Jl. Suryanata Perum Bukit Pinang Blok C1 No. 52",
                         ),
-                        // Skills(),
-                        SizedBox(height: defaultPadding),
-                        // Coding(),
-                        // Knowledges(),
-                        // Divider(),
+                        SizedBox(height: defaultPadding * 5),
                         SizedBox(height: defaultPadding / 2),
-                        TextButton(
-                          onPressed: () {},
-                          child: FittedBox(
-                            child: Row(
-                              children: [
-                                Text(
-                                  "Logout",
-                                  style: TextStyle(
-                                    color: Theme.of(context)
-                                        .textTheme
-                                        .bodyText1
-                                        .color,
-                                  ),
-                                ),
-                                SizedBox(width: defaultPadding / 2),
-                                SvgPicture.asset("assets/icons/download.svg")
-                              ],
-                            ),
-                          ),
+                        RoundedButton(
+                          text: "Close",
+                          textColor: Colors.white,
+                          color: RedSigasColor,
+                          fontsize: 16,
+                          press: () {
+                            Navigator.pop(context);
+                          },
                         ),
-                        // Container(
-                        //   margin: EdgeInsets.only(top: defaultPadding),
-                        //   color: sideMenuSecColor,
-                        //   child: Row(
-                        //     children: [
-                        //       Spacer(),
-                        //       IconButton(
-                        //         onPressed: () {},
-                        //         icon: SvgPicture.asset(
-                        //             "assets/icons/linkedin.svg"),
-                        //       ),
-                        //       IconButton(
-                        //         onPressed: () {},
-                        //         icon:
-                        //             SvgPicture.asset("assets/icons/github.svg"),
-                        //       ),
-                        //       IconButton(
-                        //         onPressed: () {},
-                        //         icon: SvgPicture.asset(
-                        //             "assets/icons/twitter.svg"),
-                        //       ),
-                        //       Spacer(),
-                        //     ],
-                        //   ),
-                        // ),
                       ],
                     ),
                   ),
