@@ -1,6 +1,6 @@
-# sigas_fuel
+# SIGAS FUEL
 
-A new Flutter project.
+This flutter project is representative of Sigas Fuel Apps from INTEK Team's
 
 ## Getting Started
 
