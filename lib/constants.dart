@@ -8,5 +8,6 @@ const bckgrndColor = Color(0xFFffffff);
 const sideMenuPrimeColor = Color.fromARGB(200, 150, 0, 0);
 const sideMenuSecColor = Color.fromARGB(255, 250, 250, 250);
 const circleAvaColor = Color(0xFFFFFFFF);
+const warnaputih = Color(0xFF000000);
 
 const defaultPadding = 20.0;
