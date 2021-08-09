@@ -41,7 +41,7 @@ class SideMenu extends StatelessWidget {
                           text:
                               "Jl. Suryanata Perum Bukit Pinang Blok C1 No. 52",
                         ),
-                        SizedBox(height: defaultPadding * 5),
+                        SizedBox(height: defaultPadding * 3),
                         SizedBox(height: defaultPadding / 2),
                         RoundedButton(
                           text: "Close",

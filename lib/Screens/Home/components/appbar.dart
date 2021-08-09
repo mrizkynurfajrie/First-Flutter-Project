@@ -15,10 +15,11 @@ AppBar appbarHome() {
             fontStyle: FontStyle.italic)),
     leading: Builder(
       builder: (context) => IconButton(
-          onPressed: () {
-            Scaffold.of(context).openDrawer();
-          },
-          icon: Icon(Icons.person_sharp)),
+        onPressed: () {
+          Scaffold.of(context).openDrawer();
+        },
+        icon: Icon(Icons.person_sharp),
+      ),
     ),
   );
 }
