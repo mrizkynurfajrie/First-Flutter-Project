@@ -29,13 +29,13 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
-              text: "LOGIN",
+              text: "Sign In",
               press: () {
                 Navigator.pushNamed(context, LoginScreen.routeName);
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "Sign Up",
               color: kPrimaryLightColor,
               textColor: Colors.white,
               press: () {
